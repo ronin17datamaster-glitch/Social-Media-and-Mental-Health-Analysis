@@ -1,55 +1,49 @@
 # Social Media Usage and Mental Health Analysis
 
-This project performs a comprehensive statistical and machine learning analysis to investigate the relationship between social media consumption patterns and mental health outcomes. The study utilizes data processing, visualization, and predictive modeling to identify key stressors and behavioral trends.
+This project explores the relationship between social media consumption and various mental health indicators using statistical analysis and machine learning. [cite_start]By processing behavioral data, the study identifies patterns that correlate with mental health outcomes and evaluates the effectiveness of different classification models in predicting these states. [cite: 3, 4]
 
 ---
 
 ## Project Overview
 
-The analysis is contained within a Jupyter Notebook (`smmh.ipynb`) and covers the following core areas:
+The analysis is conducted through a structured data science pipeline implemented in a Jupyter Notebook:
 
-### 1. Data Processing and Cleaning
-* [cite_start]**Environment Setup**: Integration with Google Colab and Google Drive for data retrieval[cite: 3].
-* [cite_start]**Data Handling**: Utilizing `pandas` and `numpy` for cleaning, handling missing values, and structuring behavioral data[cite: 3].
+### 1. Data Acquisition and Cleaning
+* [cite_start]**Data Integration**: The project utilizes datasets hosted on Kaggle and integrates with Google Colab for streamlined processing. [cite: 4]
+* [cite_start]**Pre-processing**: Standard data cleaning procedures are applied using `pandas` and `numpy` to prepare the features for statistical modeling. [cite: 4]
 
 ### 2. Exploratory Data Analysis (EDA)
-* [cite_start]**Visualization**: Implementation of `matplotlib` and `seaborn` to identify correlations between time spent on social media and reported mental health metrics (such as anxiety, depression, and self-esteem)[cite: 3].
-* [cite_start]**Feature Engineering**: Selection of relevant variables to improve the predictive power of the models[cite: 3].
+* [cite_start]**Visual Correlation**: The analysis uses `matplotlib` and `seaborn` to visualize how social media usage metrics relate to mental health scores. [cite: 3, 4]
+* [cite_start]**Feature Selection**: Identifying the most impactful social media behaviors to serve as predictors for the machine learning models. [cite: 3]
 
-### 3. Predictive Modeling
-* [cite_start]**Logistic Regression**: A classifier was trained to categorize or predict specific mental health statuses based on usage patterns[cite: 3].
-* [cite_start]**Performance Evaluation**: The model achieved an accuracy score of **100%** on the test set, indicating a very strong (or potentially overfit) relationship within the specific dataset provided[cite: 3].
-* [cite_start]**Optimization**: Monitored the number of iterations performed by the model to ensure convergence during training[cite: 3].
+### 3. Machine Learning Models
+The project implements and compares multiple classification algorithms to predict mental health status:
+* [cite_start]**Logistic Regression**: Used to establish a baseline for classification, achieving high accuracy in identifying mental health categories based on usage data. [cite: 3]
+* [cite_start]**Gaussian Naive Bayes**: An alternative probabilistic model was implemented, achieving an accuracy of approximately **94.4%** on the test dataset. [cite: 4]
+* [cite_start]**Performance Evaluation**: Models are evaluated based on their accuracy scores and their ability to generalize to new, unseen data. [cite: 3, 4]
 
 ---
 
 ## Key Findings
 
-* [cite_start]**Statistical Correlation**: The analysis highlights how specific social media platforms and the duration of use correlate with mental health indicators[cite: 3].
-* [cite_start]**Model Success**: The high accuracy of the Logistic Regression model suggests that social media usage metrics are highly deterministic of the mental health categories defined in the dataset[cite: 3].
+* [cite_start]**Predictive Accuracy**: The high performance of the Gaussian Naive Bayes and Logistic Regression models suggests that social media usage patterns provide significant signals regarding an individual's mental health status. [cite: 3, 4]
+* [cite_start]**Model Convergence**: Logistic Regression results were verified through iteration monitoring to ensure the model reached an optimal solution. [cite: 3]
 
 ---
 
 ## Requirements
 
-To run the analysis, you need a Python environment with the following libraries:
-* `pandas`
-* `numpy`
-* `matplotlib`
-* `seaborn`
-* `scikit-learn`
+To run this analysis, the following Python libraries are required:
+* [cite_start]`pandas` [cite: 3, 4]
+* [cite_start]`numpy` [cite: 3, 4]
+* [cite_start]`matplotlib` [cite: 3]
+* [cite_start]`seaborn` [cite: 3]
+* [cite_start]`scikit-learn` [cite: 4]
 
 ---
 
 ## Usage
 
-1.  [cite_start]**Data Source**: Ensure the dataset (e.g., `smmh.csv`) is available in your environment or linked via Google Drive[cite: 3].
-2.  **Execution**: Open `smmh.ipynb` in Google Colab or a local Jupyter server.
-3.  [cite_start]**Analysis**: Run the cells sequentially to perform the data cleaning, visualization, and model training steps[cite: 3].
-
----
-
-## Project Structure
-
-* [cite_start]`smmh.ipynb`: Main analysis notebook containing code and visualizations[cite: 3].
-* [cite_start]`smmh.csv`: (Required) The raw data used for the analysis[cite: 3].
+1. [cite_start]**Environment**: It is recommended to run the notebook in Google Colab or a local Jupyter environment. [cite: 3, 4]
+2. [cite_start]**Data**: Ensure the required dataset (e.g., `smmh.csv`) is placed in the appropriate directory or linked via Google Drive as specified in the code. [cite: 3]
+3. [cite_start]**Execution**: Run the notebook cells sequentially to execute the data cleaning, visualization, and model training phases. [cite: 3]
